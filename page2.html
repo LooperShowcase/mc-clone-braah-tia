@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: rgb(255, 255, 255) url('img_tree.gif') no-repeat fixed
+          center;
+        color: rgb(0, 0, 0);
+      }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+            
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+    </style>
+  </head>
+  <body>
+<label class="switch">
+  <input type="checkbox" checked onclick="myFunction()">
+  <span class="slider round"></span>
+</label>
+    <BR></BR>
+    <img lowsrc="img/splash"
+    src="http://web.archive.org/web/19970311190458im_/http://www.mcdonalds.com/img/welcome.gif"
+     width="380" />
+     <br>
+     <img lowsrc="img/splash"
+     src="http://web.archive.org/web/19970311200331im_/http://www.mcdonalds.com/img/static-ext-white.gif"
+     width="380">
+<h4><span>J</span>ust click on the adults or kids to your right to enter our site as a grown-up or a child. Have fun!"</h4> 
+
+<h4>
+If you're interested in the <a href="">fine print, </a>now is an opportunity to check it out.
+</h4>
+<h4><a href="">Adult</a> | <a href="">Kids</a></h4> 
+<h4></h4> 
+<h4><a href="">© McDonald's Corp </a> 1996. All rights reserved.</h4>
+
+
+
+
+<script>
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+</script>
+  </body>
+</html>
